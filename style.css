@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    background-color: cornflowerblue;
+    color: white;
+    overflow: hidden;
+
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 4.6rem;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+.todo-input-container {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input-container input {
+    min-width: 40%;
+    padding: .6rem .7rem;
+    border-radius: .3rem;
+}
+
+.todo-input-container input:focus {
+    outline: 0rem;
+}
+
+.todo-input-container button {
+    padding: .6rem 1rem;
+    border-radius: .3rem;
+    margin-left: .4rem;     
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+.todo-list {
+    margin-inline: auto;
+    max-height: 22rem;
+    max-width: 37rem;
+    overflow-y: auto;
+    margin-block-start: .7rem;
+}
+
+.todo-list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem .6rem;
+    background-color: darkslateblue;
+    border-radius: .5rem;
+    margin-bottom: .6rem;
+}
+
+.todo-list div:last-of-type {
+    margin-bottom: 0rem;
+}
+
+.todo-list div p {
+    max-width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.todo-list div div {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: .4rem;
+}
+
+.todo-list div div button {
+    border-radius: .5rem;
+    padding: .2rem;
+    font-size: .9rem;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.error-message {
+    position: fixed;
+    top: 2px;
+    left: 10px;
+
+    font-size: 2rem;
+    color: red;
+}
+
+
+
